@@ -1,0 +1,10 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <p>
+            Nom: {{royaume.nom}}<br />
+        </p>
+        <a href={{path('royaume_modifier', { 'id': royaume.id })}}>Modifier</a>
+        <a href={{path('supprimer_royaume', { 'id': royaume.id })}}>Supprimer</a>
+    </body>
+</html>

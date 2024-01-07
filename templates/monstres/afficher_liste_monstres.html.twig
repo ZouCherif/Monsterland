@@ -1,0 +1,9 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        {% for monstre in monstres %}
+            <a href={{path('afficher_details', { 'id': monstre.id })}}>{{monstre.nom}}</a>
+            <hr />
+        {% endfor %}
+    </body>
+</html>

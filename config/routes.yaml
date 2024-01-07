@@ -1,3 +1,60 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+liste_monstres:
+  path: /afficher_monstres
+  controller: App\Controller\MonstreController::afficher_monstres
+liste_royaumes:
+  path: /afficher_royaumes
+  controller: App\Controller\MonstreController::afficher_royaumes
+ajouter_monstre:
+  path: /ajouter_monstre
+  controller: App\Controller\MonstreController::ajouter_monstre
+ajouter_royaume:
+  path: /ajouter_royaume
+  controller: App\Controller\MonstreController::ajouter_royaume
+monstre_modifier:
+  path: /modifier/{id}
+  controller: App\Controller\MonstreController::modifier
+  requirements:
+    id: \d+
+monstre_modifier_suite:
+  path: /modifierSuite/{id}
+  controller: App\Controller\MonstreController::modifierSuite
+  methods: POST
+afficher_details:
+  path: /afficher_monstre/{id}
+  controller: App\Controller\MonstreController::afficher_monstre
+supprimer_monstre:
+  path: /supprimer_monstre/{id}
+  controller: App\Controller\MonstreController::supprimer_monstre
+afficher_details_royaume:
+  path: /afficher_royaume/{id}
+  controller: App\Controller\MonstreController::afficher_royaume
+modifier_royaume:
+  path: /modifier_royaume/{id}
+  controller: App\Controller\MonstreController::modifier_royaume
+modifier_royaume_suite:
+  path: /modifier_royaumeSuite/{id}
+  controller: App\Controller\MonstreController::modifierRoyaumeSuite
+supprimer_royaume:
+  path: /supprimer_royaume/{id}
+  controller: App\Controller\MonstreController::supprimer_royaume
+monstres_royaume:
+  path: /monstresDeRoyaume/{id}
+  controller: App\Controller\MonstreController::montres_royaume
+monstres_type:
+  path: /monstresType/{type}
+  controller: App\Controller\MonstreController::monstres_type
+royaume_data:
+  path: /royaumeData
+  controller: App\Controller\MonstreController::royaume_data
+deplacer_monstres:
+  path: /deplacerMonstres/{A}/{B}
+  controller: App\Controller\MonstreController::deplacer_monstres
+afficher_monstres_royaume:
+  path: /afficherMonstreRoyaume
+  controller: App\Controller\MonstreController::afficher_monstres_avec_royaume
+afficher_par_partie:
+  path: /afficherParPartie/{value}
+  controller: App\Controller\MonstreController::afficherAvecPartie
+afficher_most_powerful:
+  path: /afficherMostPowerful
+  controller: App\Controller\MonstreController::afficherLePlusPuissant

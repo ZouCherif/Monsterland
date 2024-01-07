@@ -1,0 +1,14 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        <p>
+            Nom: {{monstre.nom}}<br />
+            Type: {{monstre.type}}<br />
+            Puissance: {{monstre.puissance}}<br />
+            Taille: {{monstre.taille}}<br />
+            Royaume: {{royaume}}
+        </p>
+        <a href={{path('monstre_modifier', { 'id': monstre.id })}}>Modifier</a>
+        <a href={{path('supprimer_monstre', { 'id': monstre.id })}}>Supprimer</a>
+    </body>
+</html>

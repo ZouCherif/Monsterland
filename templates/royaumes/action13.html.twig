@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Royaume</th>
+            <th>Nombre de monstres par type</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for royaume, monstres in data %}
+        <tr>
+            <td>{{ royaume }}</td>
+            <td>
+                <ul>
+                    {% for monstreType, count in monstres %}
+                    <li>{{ monstreType }} : {{ count }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

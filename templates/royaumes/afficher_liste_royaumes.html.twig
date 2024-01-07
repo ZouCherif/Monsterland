@@ -1,0 +1,9 @@
+<!DOCTYPE html> 
+<html>
+    <body>
+        {% for royaume in royaumes %}
+            <a href={{path('afficher_details_royaume', { 'id': royaume.id })}}>{{royaume.nom}}</a>
+            <hr />
+        {% endfor %}
+    </body>
+</html>
